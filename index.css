@@ -49,8 +49,14 @@
     font-size: 22px;
     margin-top: 25px;
 }
+.container-button_payments{
+    display: flex;
+    gap: 30px;
+}
 .primary-button{
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
     font-size: 16px;
     letter-spacing: 1.25px;
     font-weight: bold;
@@ -59,7 +65,7 @@
     background-color: #0a2540;
     color: white;
     padding: 8px 16px;
-    transition: all 0.15s ease;
+    transition: all 0.15s ease-in-out;
 }
 .button-start{
     background-color: transparent;
@@ -69,6 +75,9 @@
 
 }
 .second-button{
+    display: flex;
+   justify-content: center;
+   align-items: center;
     font-size: 16px;
     letter-spacing: 1.25px;
     font-weight: bold;
@@ -94,4 +103,86 @@ margin-top: 30px;
 }
 .logos-section-header{
     width: 160px;
+}
+
+@media (min-width: 768px){
+    .container-payments{
+        display: flex
+    }
+    .mobile-payments{
+        display:inline-block;
+        width: 260px;
+    }
+    .container-logos-marcas{
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1024px){
+   
+    .backgroud-header{
+            height: 380px; /* Ajusta la altura según tus necesidades */
+        transform: skewY(-6deg); /* Inclina el contenedor */
+        
+        }
+        .logo-header{
+            margin-top: 10px;
+        }
+    .menu-header{
+        display: block;
+        list-style: none;
+        display: flex;      
+        gap: 16px;
+        color: white;
+        font-weight: 900;
+        margin-top: 10px;
+    }
+    .menu-header-icon{
+        display: none
+    }
+    .sign-in{
+    font-size:16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    background-color: rgba(250, 250, 250, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    }
+    .container-payments{
+        display: flex;
+        justify-content: space-around;
+    }
+    .payments-title{
+        font-size: 80px;
+        margin-top: 100px;
+        line-height: 90px;
+        width: 580px;
+    }
+    .payments-paragraph{
+        width: 480px;
+    }
+    .mobile-payments{
+        width: 360px;
+    }
+    .payments-button:hover{
+        cursor: pointer;
+    }
+    .button-start {
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+    .payments-button:hover .button-start {
+        transform: translateX(5px); /* Mueve el span 5px hacia la derecha */
+       
+      } 
+    .container-logos-marcas{
+        
+        justify-items: center;
+    }
 }
