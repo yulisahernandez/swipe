@@ -1,0 +1,97 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Anek Telugu", sans-serif;
+}
+.header-seccion01{
+    position: relative; 
+    width: 100%;
+}
+.backgroud-header{
+    background:linear-gradient(40deg,#EF008F,#6EC3F4,#7038FF,#FFBA27);
+    width: 100%;
+    height: 250px; /* Ajusta la altura según tus necesidades */
+    transform: skewY(-8deg); /* Inclina el contenedor */
+    transform-origin: 0;
+    position: absolute;
+    z-index: -1
+ 
+}
+.header-nav{
+    position:relative;
+    display: flex;
+    justify-content: space-around
+}
+.menu-header{
+    display: none
+}
+.sign-in{
+    display: none;
+}
+.menu-header-icon{
+    color: white;
+    width: 50px;
+    height: 30px;
+    background-color: rgba(250, 250, 250, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.payments-title{
+    font-size: 45px;
+    margin-top: 30px;
+    line-height: 60px;
+}
+.payments-paragraph{
+    font-size: 22px;
+    margin-top: 25px;
+}
+.primary-button{
+   
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: #0a2540;
+    color: white;
+    padding: 8px 16px;
+    transition: all 0.15s ease;
+}
+.button-start{
+    background-color: transparent;
+    margin-left: 4px;
+  text-align: center;
+
+
+}
+.second-button{
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    color: #7000ff;
+
+}
+.payments-button{
+   
+margin-top: 30px;
+
+}
+
+.mobile-payments{
+    display: none;
+}
+.container-logos-marcas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+}
+.logos-section-header{
+    width: 160px;
+}
