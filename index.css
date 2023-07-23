@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anek Telugu", sans-serif;
+}
+.backgroud-header {
+  background: linear-gradient(40deg, #ef008f, #6ec3f4, #7038ff, #ffba27);
+  width: 100%;
+  height: 250px; /* Ajusta la altura según tus necesidades */
+  transform: skewY(-8deg); /* Inclina el contenedor */
+  transform-origin: 0;
+  position: absolute;
+  z-index: -1;
+}
+.header-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-header {
+  display: none;
+}
+.sign-in {
+  display: none;
+}
+.menu-header-icon {
+  color: white;
+  width: 50px;
+  height: 30px;
+  background-color: rgba(250, 250, 250, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.header-seccion01 {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.container-center_content {
+  width: 90%;
+}
+.payments-title {
+  font-size: 45px;
+  margin-top: 30px;
+  line-height: 60px;
+}
+.payments-paragraph {
+  font-size: 22px;
+  margin-top: 25px;
+}
+.container-button_payments {
+  display: flex;
+  gap: 30px;
+}
+.primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: #0a2540;
+  color: white;
+  padding: 8px 16px;
+  transition: all 0.15s ease-in-out;
+}
+.button-start {
+  background-color: transparent;
+  margin-left: 4px;
+  text-align: center;
+}
+.second-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  color: #7000ff;
+}
+.payments-button {
+  margin-top: 30px;
+}
+.mobile-payments {
+  display: none;
+}
+.container-logos-marcas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  overflow: hidden;
+}
+.logos-section-header {
+  width: 160px;
+}
+@media (min-width: 768px) {
+  .container-payments {
+    display: flex;
+  }
+  .mobile-payments {
+    display: inline-block;
+    width: 260px;
+  }
+  .container-logos-marcas {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .backgroud-header {
+    height: 380px; /* Ajusta la altura según tus necesidades */
+    transform: skewY(-6deg); /* Inclina el contenedor */
+  }
+  .logo-header {
+    margin-top: 10px;
+  }
+  .menu-header {
+    display: block;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    color: white;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  .menu-header-icon {
+    display: none;
+  }
+  .sign-in {
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    background-color: rgba(250, 250, 250, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+  }
+  .container-payments {
+    display: flex;
+    justify-content: space-around;
+  }
+  .payments-title {
+    font-size: 80px;
+    margin-top: 100px;
+    line-height: 90px;
+    width: 580px;
+  }
+  .payments-paragraph {
+    width: 480px;
+  }
+  .mobile-payments {
+    width: 360px;
+  }
+  .payments-button:hover {
+    cursor: pointer;
+  }
+  .button-start {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .payments-button:hover .button-start {
+    transform: translateX(5px); /* Mueve el span 5px hacia la derecha */
+  }
+  .container-logos-marcas {
+    justify-items: center;
+  }
+}
