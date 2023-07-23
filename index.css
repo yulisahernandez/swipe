@@ -102,6 +102,76 @@
 .logos-section-header {
   width: 160px;
 }
+.seccion02{
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+.fuente-purpura{
+  color:#6962f7;
+  font-weight: bold;
+}
+
+.titulo-seccion02{
+  font-size: 34px;
+  margin-bottom: 36px;
+  margin-top: 36px;
+}
+.parrafo-seccion02{
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.seccion02-boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: #6962f7;
+  color: white;
+  padding: 8px 16px;
+  transition: all 0.15s ease-in-out;
+  margin-bottom: 60px;
+
+}
+#credit{
+  width: 100%;
+  grid-area: card;
+}
+#phone{
+  width: 100%;
+  grid-area: phone;
+}
+#slack{
+  width: 100%;
+  grid-area: slack;
+}
+#dash{
+  width: 100%;
+  grid-area: dash;
+}
+.cards-seccion02{
+ 
+    display: grid;
+    grid-template-areas:
+        "card slack slack"
+        "phone slack slack"
+        "phone dash dash";
+    grid-gap: 32px;
+    padding-block: 32px;
+    max-width: 100%;
+    padding-block: 32px;
+    padding-top: calc(32px +64px);
+
+
+}
 @media (min-width: 768px) {
   .container-payments {
     display: flex;
@@ -114,6 +184,11 @@
     grid-template-columns: repeat(4, 1fr);
     margin-top: 50px;
   }
+.container-text{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 @media (min-width: 1024px) {
   .backgroud-header {
@@ -163,7 +238,7 @@
     width: 480px;
   }
   .mobile-payments {
-    width: 360px;
+    width: 400px;
   }
   .payments-button:hover {
     cursor: pointer;
@@ -176,5 +251,12 @@
   }
   .container-logos-marcas {
     justify-items: center;
+  }
+}
+
+@media(min-width: 1440px){
+  .container-payments{
+    display: flex;
+    justify-content: space-between;
   }
 }
