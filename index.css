@@ -228,10 +228,6 @@
     display: flex;
     justify-content: space-around;
   }
-  /* .container-center_content{
-    width: 100%;
-    max-width: 60%;
-  } */
   .payments-title {
     font-size: 80px;
     margin-top: 100px;
